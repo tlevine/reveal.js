@@ -46,16 +46,22 @@ $headingLineHeight: 2.5em;
 }
 
 .reveal .orange {
-  background-color: orange;
+  background-color: #FEA78B;
 }
 
 .reveal .green {
-  background-color: green;
+  background-color: #CCFEF3;
 }
 
 .reveal .purple {
-  background-color: purple;
+  background-color: #BBBDEE;
 }
+
+$green: #CCFEF3;
+$purple: #BBBDEE;
+$orange: #FEA78B;
+$tan: #FFFED5;
+$grey: #E0E0E0;
 
 // Theme template ------------------------------
 @import "../template/theme";
