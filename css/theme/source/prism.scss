@@ -1,8 +1,12 @@
 /**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is brown.
+ * This is a theme for reveal.js presentations inspired by the PRISM slides
  *
- * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ * It has a few special classes.
+   + `.box` makes a square-cornered box with a PowerPoint-colored background.
+   + `.box.round` makes a round-cornered box with a PowerPoint-orange--colored background.
+ *
+ * This theme is Copyright (C) 2012-2013 Thomas Levine and MIT licensed.
+ * It is based on the serif theme by Owen Versteeg, http://owenversteeg.com, which is MIT licensed.
  */
 
 
@@ -39,29 +43,26 @@ $headingLineHeight: 2.5em;
   vertical-align: baseline;
 }
 
-.reveal .rounded-rectangle {
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 1em;
-}
-
-.reveal .orange {
-  background-color: #FEA78B;
-}
-
-.reveal .green {
-  background-color: #CCFEF3;
-}
-
-.reveal .purple {
-  background-color: #BBBDEE;
-}
 
 $green: #CCFEF3;
 $purple: #BBBDEE;
 $orange: #FEA78B;
 $tan: #FFFED5;
 $grey: #E0E0E0;
+
+.reveal .box {
+  border-style: solid;
+  border-width: 2px;
+  &:nth-of-type(5n + 0) { background-color: $green; }
+  &:nth-of-type(5n + 1) { background-color: $purple; }
+  &:nth-of-type(5n + 2) { background-color: $orange; }
+  &:nth-of-type(5n + 3) { background-color: $tan; }
+  &:nth-of-type(5n + 4) { background-color: $grey; }
+  &.round {
+    border-radius: 1em;
+    background-color: $orange;
+  }
+}
 
 // Theme template ------------------------------
 @import "../template/theme";
