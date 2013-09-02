@@ -18,7 +18,7 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainFontSize: 18px;
+$mainFontSize: 24px;
 $mainFont: 'Times New Roman', 'Times', FreeSerif, serif;
 $mainColor: #000;
 $headingFont: 'Times New Roman', 'Times', FreeSerif, serif;
@@ -30,7 +30,6 @@ $linkColor: #51483D;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #26351C;
 
-$headingLineHeight: 8 * $mainFontSize;
 $green: #CCFEF3;
 $purple: #BBBDEE;
 $orange: #FEA78B;
@@ -48,10 +47,11 @@ $grey: #E0E0E0;
     >h4:first-child,
     >h5:first-child,
     >h6:first-child {
-      font-size: $mainFontSize * 3;
+      font-size: $mainFontSize * 2;
       background-image: url("/css/theme/prism/banner.jpg");
       background-size: 100%;
       background-origin: border-box;
+      line-height: 6 * $mainFontSize;
       &::before {
         content: '(TS//SI//NF)';
         font-size: 0.4em;
