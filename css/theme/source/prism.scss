@@ -34,15 +34,22 @@ $selectionBackgroundColor: #26351C;
 }
 
 $headingLineHeight: 2.5em;
-.reveal h1 {
-  background-image: url("/css/theme/prism/gradient.jpg");
-  background-size: cover;
-  background-origin: border-box;
-}
-.reveal h1::before {
-  content: '(TS//SI//NF)';
-  font-size: 0.4em;
-  vertical-align: baseline;
+.reveal section {
+  >h1:first-child,
+  >h2:first-child,
+  >h3:first-child,
+  >h4:first-child,
+  >h5:first-child,
+  >h6:first-child {
+    background-image: url("/css/theme/prism/gradient.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    &::before {
+      content: '(TS//SI//NF)';
+      font-size: 0.4em;
+      vertical-align: baseline;
+    }
+  }
 }
 
 
@@ -66,16 +73,19 @@ $grey: #E0E0E0;
   }
 }
 
-section::before, section::after {
-  content: 'TOP SECRET//SI//ORCON//NOFORN';
-  color: red;
-  display: block;
-}
-section::before {
-  text-align: left;
-}
-section::after {
-  text-align: right;
+.reveal .slides > section:not(.stack) ,
+.reveal .slides > section.stack > section {
+  &::before, &::after {
+    content: 'TOP SECRET//SI//ORCON//NOFORN';
+    color: red;
+    display: block;
+  }
+  &::before {
+    text-align: left;
+  }
+  &::after {
+    text-align: right;
+  }
 }
 
 // Theme template ------------------------------
