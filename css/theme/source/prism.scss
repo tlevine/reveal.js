@@ -14,9 +14,9 @@
 
 // Override theme settings (see ../template/settings.scss)
 $mainFontSize: 12px;
-$mainFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$mainFont: 'Times New Roman', 'Times', FreeSerif, serif;
 $mainColor: #000;
-$headingFont: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+$headingFont: 'Times New Roman', 'Times', FreeSerif, serif;
 $headingColor: #383D3D;
 $headingTextShadow: none;
 $headingTextTransform: none;
@@ -34,6 +34,9 @@ $headingLineHeight: 2.5em;
   background-image: url("/css/theme/prism/gradient.jpg");
   background-size: cover;
   background-origin: border-box;
+}
+.reveal h1 small {
+  vertical-align: baseline;
 }
 
 // Theme template ------------------------------
