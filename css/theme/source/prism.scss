@@ -33,7 +33,7 @@ $selectionBackgroundColor: #26351C;
   line-height: 1.3em;
 }
 
-$headingLineHeight: 2.5em;
+$headingLineHeight: 12 * $mainFontSize;
 .reveal section {
   >h1:first-child,
   >h2:first-child,
@@ -41,8 +41,9 @@ $headingLineHeight: 2.5em;
   >h4:first-child,
   >h5:first-child,
   >h6:first-child {
-    background-image: url("/css/theme/prism/gradient.jpg");
-    background-size: cover;
+    font-size: $mainFontSize * 5;
+    background-image: url("/css/theme/prism/banner.jpg");
+    background-size: 100%;
     background-origin: border-box;
     &::before {
       content: '(TS//SI//NF)';
