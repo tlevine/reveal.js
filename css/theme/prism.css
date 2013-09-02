@@ -18,7 +18,7 @@
 .reveal section > h5:first-child,
 .reveal section > h6:first-child {
   font-size: 48px;
-  background-image: url("css/theme/prism/banner.jpg");
+  background-image: url("prism/banner.jpg");
   background-size: 100%;
   background-origin: border-box;
   line-height: 144px; }
