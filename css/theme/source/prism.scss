@@ -24,7 +24,7 @@ $headingFont: 'Times New Roman', 'Times', FreeSerif, serif;
 $headingColor: #383D3D;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #F0F1EB;
+$backgroundColor: white;
 $linkColor: #51483D;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: #26351C;
@@ -62,6 +62,11 @@ $grey: #E0E0E0;
     border-radius: 1em;
     background-color: $orange;
   }
+}
+
+section::before {
+  content: 'TOP SECRET//SI//ORCON//NOFORN';
+  color: red;
 }
 
 // Theme template ------------------------------
